@@ -13,8 +13,8 @@
 
 <div class={style.wrapper}>
 
-    <div class="w-full h-full max-w-7xl p-6">
-        <div class="w-full relative rounded-2xl overflow-hidden max-h-[40rem] bg-cover bg-center">
+    <div class="w-full h-full max-w-7xl sm:p-6">
+        <div class="w-full relative sm:rounded-2xl overflow-hidden h-[60vh] sm:max-h-[40rem] bg-cover bg-center">
             <div class="w-full h-full top-0 left-0 absolute opacity-80 bg-gradient-to-br from-[#D1EFCB] via-[#071F25] to-[#071E26]"></div>
             <div class="w-full h-full flex absolute top-0 left-0 justify-center items-start px-4 flex-col">
 
@@ -53,10 +53,10 @@
     </div>
 
 
-    <div class="w-full h-full p-6 max-w-7xl">
-        <div class="flex flex-col w-full lg:h-80 relative rounded-2xl bg-gray-100 items-center py-10 gap-5">
+    <div class="w-full h-full py-6 sm:px-6 max-w-7xl">
+        <div class="flex flex-col w-full lg:h-80 relative sm:rounded-2xl bg-gray-100 items-center py-10 gap-5">
             <div class="text-3xl font-bold">How It Works</div>
-            <div class="lg:absolute lg:bottom-0 lg:left-0 lg:transform lg:translate-y-1/3 grid lg:grid-cols-3 w-full justify-center items-center gap-4 px-10">
+            <div class="lg:absolute lg:bottom-0 lg:left-0 lg:transform lg:translate-y-1/3 grid lg:grid-cols-3 w-full justify-center items-center gap-4 px-4 sm:px-10">
                 
                 <StepsCard content={{image:"/images/Buy.svg",
                                     title:"Buy",
@@ -91,7 +91,7 @@
         <div class="flex w-full border-t bg-daoblue py-10">
             <div class="flex flex-col justify-center items-center w-full">
                 <div class="text-4xl font-semibold text-white">Get notifications about our first tokenized property</div>
-                <div class="w-full flex pt-20 pb-20 justify-center items-center gap-6">
+                <div class="w-full flex flex-col sm:flex-row pt-20 pb-20 justify-center items-center gap-6">
                     <div><input class="rounded-xl focus:border-b focus:outline-none focus:border-daoblue placeholder-daoblue px-10 py-2 text-daoblue" type="text" placeholder="Email"></div>
                     <button class="border border-white text-white hover:text-daoblue hover:bg-white rounded-xl px-4 py-2">Sign Up</button>
                 </div>
