@@ -3,6 +3,8 @@
     import DaomentReitSvg from "../components/svgs/DaomentReitSVG.svelte";
     import LineChart from "../components/charts/LineChart.svelte";
     import BarChart from "../components/charts/BarChart.svelte";
+    import BarChartMin from "../components/charts/BarChartMin.svelte";
+    import HorizontalBarChart from "../components/charts/HorizontalBarChart.svelte";
 
     const style = {
         wrapper: `flex flex-col w-full justify-center items-center text-gray-500`,
@@ -68,7 +70,13 @@
 
     <div class="w-full h-full py-6 sm:px-6 max-w-7xl">
         <div class="text-center text-2xl font-bold">20-year annualized returns by asset class (1999-2018)</div>
-        <BarChart/>
+        <div class="hidden sm:block">
+            <BarChart/>
+        </div>
+        <div class="sm:hidden">
+        <BarChartMin/>
+        </div>
+        <!-- <HorizontalBarChart/> -->
         <!-- <LineChart/> -->
         <div class="text-xs pt-2">Source: J.P. Morgan Asset Management</div>
     </div>

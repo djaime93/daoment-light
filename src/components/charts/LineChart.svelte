@@ -20,13 +20,21 @@
               }]
           },
           options: {
-              scales: {
-                  yAxes: [{
-                      ticks: {
-                          beginAtZero: true
-                      }
-                  }]
-              }
+            scales: {
+        x: {
+            grid: {
+                display: false,
+                borderWidth: 0
+            }
+        },
+        y: {
+            display: false,
+            grid: {
+                display: false,
+                borderWidth: 0
+            }
+        },
+    },
           }
       });
   });

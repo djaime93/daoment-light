@@ -4,7 +4,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 const config = {
 	plugins: [sveltekit()],
 	ssr: {
-		noExternal: ['chart.js/**','svelte-chartjs/**','chartjs-plugin-datalabels/**']
+		noExternal: ['chart.js/**']
 	}
 };
 
