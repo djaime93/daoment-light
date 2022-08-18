@@ -1,5 +1,8 @@
 <script>
     import StepsCard from "../components/StepsCard.svelte";
+    import DaomentReitSvg from "../components/svgs/DaomentReitSVG.svelte";
+    import LineChart from "../components/charts/LineChart.svelte";
+    import BarChart from "../components/charts/BarChart.svelte";
 
     const style = {
         wrapper: `flex flex-col w-full justify-center items-center text-gray-500`,
@@ -9,6 +12,7 @@
         heroImage: `h-30 w-30`,
         stepImage: `h-40`,
     }
+
 </script>
 
 <div class={style.wrapper}>
@@ -18,40 +22,27 @@
             <div class="w-full h-full top-0 left-0 absolute opacity-80 bg-gradient-to-br from-[#D1EFCB] via-[#071F25] to-[#071E26]"></div>
             <div class="w-full h-full flex absolute top-0 left-0 justify-center items-start px-4 flex-col">
 
-                <!-- <img
-                class="illustration"
-                alt="Daoment Democratized Real Estate Investing"
-                src="/images/DREI.svg"
-                /> -->
-
-                <!-- <img class="w-1/3" alt="Daoment illustration" src="/images/ilustracion.png" /> -->
-
-                <div class="text-4xl font-bold text-white">You're next big adventure </div>
-                <div class="text-xl text-white">See the world on your terms</div>
-                <a class="py-3 px-6 bg-[#0030C9] text-white font-semibold rounded-lg mt-4" href="/">Sign Up</a>
+                <div class="flex w-full"><DaomentReitSvg/></div>
+                <a class="py-3 px-6 bg-daoblue text-white font-semibold rounded-lg mt-4" href="/">Sign Up</a>
             </div>
             <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg" alt="">
         </div>
     </div>
 
-
-    <div class="w-full h-full hidden md:block">
-        <div class="flex w-full border-t border-b border-[#0030C9] py-10">
-            <!-- <div class="text-2xl text-[#0030C9]">web3</div> -->
-            <div class="grid md:grid-cols-3 w-full justify-center items-center text-center gap-4 px-10">
-                <div class="p-5">
-                    <div class="text-2xl text-[#0030C9]">income-producing</div>
-                </div>
-                <div class="p-5">
-                    <div class="text-2xl text-[#0030C9]">monthly dividends</div>
-                </div>
-                <div class="p-5">
-                    <div class="text-2xl text-[#0030C9]">land appreciation</div>
-                </div>
+    <div class="w-full h-full py-6 sm:px-6 max-w-7xl">
+        <div class="flex flex-col sm:flex-row w-full justify-between items-center">
+            <div class="flex flex-col pb-6">
+                <div class="text-4xl pb-6">A New Way To Invest</div>
+                <div>Get exclusive access to commercial and residential real estate deals.</div>
+            </div>
+            <div class="flex flex-col divide-y-2 divide-gray-200">
+                <div class="pb-3 text-xl">Earn monthly rental distributions</div>
+                <div class="py-3 text-xl">Accessible Ticket Prices</div>
+                <div class="py-3 text-xl">Increased liquidity through a global market</div>
+                <div class="pt-3 text-xl">Transparent management and distributions through blockchain</div>
             </div>
         </div>
     </div>
-
 
     <div class="w-full h-full py-6 sm:px-6 max-w-7xl">
         <div class="flex flex-col w-full lg:h-80 relative sm:rounded-2xl bg-gray-100 items-center py-10 gap-5">
@@ -72,9 +63,15 @@
 
             </div>
         </div>
-        <div class="hidden md:block h-40"></div>
+        <div class="hidden lg:block h-40"></div>
     </div>
 
+    <div class="w-full h-full py-6 sm:px-6 max-w-7xl">
+        <div class="text-center text-2xl font-bold">20-year annualized returns by asset class (1999-2018)</div>
+        <BarChart/>
+        <!-- <LineChart/> -->
+        <div class="text-xs pt-2">Source: J.P. Morgan Asset Management</div>
+    </div>
 
     <!-- <div class="flex flex-col justify-center items-center w-full">
         <div class="text-4xl font-semibold text-daoblue">Get notifications about our first tokenized property</div>
@@ -85,34 +82,15 @@
 
     </div> -->
 
-
-
     <div class="w-full h-full pb-10">
         <div class="flex w-full border-t bg-daoblue py-10">
             <div class="flex flex-col justify-center items-center w-full">
                 <div class="text-4xl font-semibold text-white">Get notifications about our first tokenized property</div>
                 <div class="w-full flex flex-col sm:flex-row pt-20 pb-20 justify-center items-center gap-6">
                     <div><input class="rounded-xl focus:border-b focus:outline-none focus:border-daoblue placeholder-daoblue px-10 py-2 text-daoblue" type="text" placeholder="Email"></div>
-                    <button class="border border-white text-white hover:text-daoblue hover:bg-white rounded-xl px-4 py-2">Sign Up</button>
+                    <button class="border border-white text-white hover:text-daoblue hover:bg-white rounded-xl px-4 py-2">Register</button>
                 </div>
         
-            </div>
-        </div>
-    </div>
-
-    <div class="w-full h-full md:hidden">
-        <div class="flex w-full border-t border-[#0030C9] py-10">
-            <!-- <div class="text-2xl text-[#0030C9]">web3</div> -->
-            <div class="grid md:grid-cols-3 w-full justify-center items-center text-center gap-4 px-10">
-                <div class="p-5">
-                    <div class="text-2xl text-[#0030C9]">income-producing</div>
-                </div>
-                <div class="p-5">
-                    <div class="text-2xl text-[#0030C9]">monthly dividends</div>
-                </div>
-                <div class="p-5">
-                    <div class="text-2xl text-[#0030C9]">land appreciation</div>
-                </div>
             </div>
         </div>
     </div>

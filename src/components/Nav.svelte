@@ -9,10 +9,11 @@
         // navItem: `text-gray-400`,
         navItem: `text-[#0030C9] hidden md:block`,
         
-        user: ``,
+        user: `flex flex-cols gap-2`,
 
         // getStartedButton: `hidden md:block bg-[#071F25] py-3 px-4 rounded-xl text-white font-semibold`, //  bg-[#314BA0] #0026CC #071F25
-        getStartedButton: `hidden md:block bg-[#0030C9] py-3 px-4 rounded-xl text-white font-semibold`, //  bg-[#314BA0] #0026CC #071F25
+        getStartedButton: `hidden md:block bg-daoblue py-3 px-4 rounded-xl text-white font-semibold text-center`, //  bg-[#314BA0] #0026CC #071F25
+        signInButton: `hidden md:block bg-black py-3 px-4 rounded-xl text-white font-semibold text-center`, //  bg-[#314BA0] #0026CC #071F25
         
         mobile: `md:hidden py-3 px-4 text-[#071F25] font-semibold text-3xl text-daoblue`,
     }
@@ -24,8 +25,6 @@
     <div class={style.logoContainer}>
         <a href="/"><img class={style.logo} src="/images/Icono.jpeg" alt="" /></a>
         <!-- <a href="/"><img class={style.logo} src="/images/IconoNegro.png" alt="" /></a> -->
-        <div class={`${style.logoText}`}>AO</div>
-        <div class={style.logoText}>MENT</div>
     </div>
     <div class={style.nav}>
         <a class={style.navItem} href="/">Home</a>
@@ -35,6 +34,8 @@
     </div>
     <div class={style.user}>
         <a class={style.getStartedButton} href="/signup">Get Started</a>
+        <a class={style.signInButton} href="/signup">Sign In</a>
+        
         
         <a class={style.mobile} href="/signup">
             =
