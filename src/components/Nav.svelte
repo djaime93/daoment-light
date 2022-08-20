@@ -1,4 +1,6 @@
 <script>
+    import NavMobileOptions from "./NavMobileOptions.svelte";
+
     const style = {
         navWrapper: `flex flex-cols p-6 justify-between items-center`, //border-b-2 border-black
         logoContainer: `flex justify-center items-center`,
@@ -17,8 +19,13 @@
         
         mobile: `md:hidden py-3 px-4 text-[#071F25] font-semibold text-3xl text-daoblue`,
     }
+
+    let menu = false
 </script>
 
+{#if menu}
+<NavMobileOptions/>
+{/if}
 
 <div class={style.navWrapper}>
     
@@ -37,8 +44,13 @@
         <a class={style.signInButton} href="/signup">Sign In</a>
         
         
-        <a class={style.mobile} href="/signup">
-            =
-        </a>
+        <button class={style.mobile} >
+            <!-- <img class="h-5 fill-daoblue" src="icons/menu-burger.svg" alt=""> -->
+
+            <svg class="h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
+                <path d="M480 224H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32zM32 138.667h448c17.673 0 32-14.327 32-32s-14.327-32-32-32H32c-17.673 0-32 14.327-32 32s14.327 32 32 32zM480 373.333H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32z"/>
+            </svg>
+            
+        </button>
     </div>
 </div>
