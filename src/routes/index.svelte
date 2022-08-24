@@ -74,8 +74,18 @@
         <div class="hidden lg:block h-40"></div>
     </div>
 
-    <div class="w-full h-full py-6 sm:px-6 max-w-7xl">
-        <div class="text-center text-2xl font-bold">20-year annualized returns by asset class (1999-2018)</div>
+    <div class="w-full h-full py-6 sm:px-6 max-w-7xl flex flex-col lg:flex-row justify-between">
+        <div class="flex flex-col gap-3 lg:w-1/3 pb-10 text-center lg:text-start">
+            <div class="text-2xl font-bold">Why Invest in Real Estate?</div>
+            <div class="flex flex-col gap-3 text-xl">
+                <div>Best Performing Asset Class During the Last 20 Years</div>
+                <div>Volatility and Inflation Hedge</div>
+                <div>Earn Passive Income Plus Land Appreciation</div>
+                <div>Leverage to Build Wealth</div>
+            </div>
+        </div>
+        <div class="lg:w-2/3">
+        <div class="text-center text-xl">20-year annualized returns by asset class (1999-2018)</div>
         <div class="hidden sm:block">
             <BarChart/>
         </div>
@@ -85,6 +95,7 @@
         <!-- <HorizontalBarChart/> -->
         <!-- <LineChart/> -->
         <div class="text-xs pt-2">Source: J.P. Morgan Asset Management</div>
+        </div>
     </div>
 
     <!-- <div class="flex flex-col justify-center items-center w-full">

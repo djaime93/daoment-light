@@ -21,12 +21,14 @@
                 label: '20-year annualized returns by asset class (1999-2018)',
                   backgroundColor: [
           'rgba(0, 48, 201,1)',
-          'rgba(209, 239, 203,1)',
+          'rgba(0, 48, 201,1)',
+        //   'rgba(209, 239, 203,1)',
         ],
         borderWidth: 0,
         borderColor: [
           'rgba(98,  182, 239, 1)',
-          'rgba(255, 177, 101, 1)',
+          'rgba(98,  182, 239, 1)',
+        //   'rgba(255, 177, 101, 1)',
         ],
                   data: [
             9.9,
