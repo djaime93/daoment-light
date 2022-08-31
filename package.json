@@ -36,6 +36,7 @@
 	"dependencies": {
 		"chart.js": "^3.9.1",
 		"chartjs-plugin-datalabels": "^2.1.0",
+		"firebase": "^9.9.3",
 		"svelte-forms": "^2.3.1",
 		"svelte-forms-lib": "^2.0.1",
 		"yup": "^0.32.11"

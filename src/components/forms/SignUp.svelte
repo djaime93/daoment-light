@@ -1,15 +1,31 @@
 <script>
   import { createForm } from "svelte-forms-lib";
   import * as yup from "yup";
+  import { collection, addDoc, doc } from "firebase/firestore";
+  import { db } from "../../firebase";
 
+  const pushLead = async (values) => {
+      try {
+        const docRef = await addDoc(collection(db,'leads'), {
+          first: values.first,
+          last: values.last,
+          email: values.email,
+          created: Date.now(),
+          updated: Date.now(),
+          status: false
+        })
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+  }
   const { form, errors, state, handleChange, handleSubmit } = createForm({
     initialValues: {
-      name: "",
+      first: "",
       last: "",
       email: ""
     },
     validationSchema: yup.object().shape({
-      name: yup.string().required(),
+      first: yup.string().required(),
       last: yup.string().required(),
       email: yup
         .string()
@@ -17,7 +33,13 @@
         .required()
     }),
     onSubmit: values => {
+      pushLead(values)
       alert(JSON.stringify(values));
+      // try {
+      //   const docRef = await addDoc(collection(db,'leads'), values)
+      // } catch (e) {
+      //   console.error("Error adding document: ", e);
+      // }
     }
   });
 
@@ -31,17 +53,17 @@
 
 <form class={style.form} on:submit={handleSubmit}>
   
-  <label for="name">name</label>
+  <label for="first">name</label>
   <input
-    id="name"
-    name="name"
+    id="first"
+    name="first"
     class={style.input}
     on:change={handleChange}
     on:blur={handleChange}
-    bind:value={$form.name}
+    bind:value={$form.first}
   />
-  {#if $errors.name}
-    <small>{$errors.name}</small>
+  {#if $errors.first}
+    <small>{$errors.first}</small>
   {/if}
 
   <label for="last">last</label>
