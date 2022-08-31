@@ -1,7 +1,7 @@
 <script>
   import { createForm } from "svelte-forms-lib";
   import * as yup from "yup";
-  import { collection, addDoc, doc } from "firebase/firestore";
+  import { collection, addDoc, doc, serverTimestamp } from "firebase/firestore";
   import { db } from "../../firebase";
 
   const pushLead = async (values) => {
@@ -10,9 +10,10 @@
           first: values.first,
           last: values.last,
           email: values.email,
-          created: Date.now(),
-          updated: Date.now(),
-          status: false
+          created: serverTimestamp(),
+          updated: serverTimestamp(),
+          converted: false,
+          from: "signup"
         })
       } catch (e) {
         console.error("Error adding document: ", e);

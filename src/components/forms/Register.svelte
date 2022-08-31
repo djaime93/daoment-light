@@ -2,6 +2,24 @@
   <script>
     import { createForm } from "svelte-forms-lib";
     import * as yup from "yup";
+    import { collection, addDoc, doc, serverTimestamp } from "firebase/firestore";
+  import { db } from "../../firebase";
+
+  const pushLead = async (values) => {
+      try {
+        const docRef = await addDoc(collection(db,'leads'), {
+          first: "",
+          last: "",
+          email: values.email,
+          created: serverTimestamp(),
+          updated: serverTimestamp(),
+          converted: false,
+          from: "register"
+        })
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+  }
 
     const { form, errors, state, handleChange, handleSubmit } = createForm({
       initialValues: {
@@ -14,6 +32,7 @@
           .required()
       }),
       onSubmit: values => {
+        pushLead(values)
         alert(JSON.stringify(values));
       }
     });
