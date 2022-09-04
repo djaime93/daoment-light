@@ -4,7 +4,7 @@
     const style = {
         navWrapper: `flex flex-cols p-6 justify-between items-center`, //border-b-2 border-black
         logoContainer: `flex justify-center items-center`,
-        logo: `h-10`,
+        logo: `h-20`,
         logoText: `hidden md:block text-2xl font-bold text-[#071F25]`,
         nav: `flex flex-cols gap-10`,
         

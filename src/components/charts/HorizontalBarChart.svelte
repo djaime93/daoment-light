@@ -14,7 +14,7 @@
           type: 'bar',
           data: {
               labels: [
-        ["Real","Estate","Investment","Trust"],
+        ["Real Estate","Investment Trust"],
         "Gold",
         "Oil",
         "S&P 500",
