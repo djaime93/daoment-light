@@ -31,7 +31,7 @@
             <div class="w-full h-full flex absolute top-0 left-0 justify-center items-start px-4 flex-col">
 
                 <div class="flex w-full"><DaomentReitSvg/></div>
-                <a class="py-3 px-6 bg-daoblue text-white font-semibold rounded-lg mt-4" href="/signup">Sign Up</a>
+                <a class="py-3 px-6 ml-10 bg-daoblue text-white font-semibold rounded-lg mt-4" href="/signup">Sign Up</a>
             </div>
             <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg" alt="">
         </div>
@@ -78,7 +78,7 @@
         <div class="hidden lg:block h-40"></div>
     </div>
 
-    <div class="w-full h-full flex flex-col justify-center items-center">
+    <div class="w-full h-full flex flex-col justify-center items-center p-2">
 
             <div class="text-4xl font-bold font-reno font-bold text-daoblue">Why Invest in Real Estate?</div>
     <div class="w-full h-full py-6 sm:px-6 max-w-7xl flex flex-col lg:flex-row justify-between items-center gap-10">

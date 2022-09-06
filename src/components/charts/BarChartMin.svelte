@@ -68,6 +68,10 @@
             // formatter: Math.round,
             font: {
                 weight: 'bold'
+            },
+            formatter: function(value, context) {
+                return Math.round(value) + '%'
+                // return context.chart.data.labels[context.dataIndex];
             }
         },
         tooltip: {

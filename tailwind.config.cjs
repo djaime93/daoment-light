@@ -29,7 +29,7 @@ module.exports = {
         'roboto': ['Roboto', 'sans-serif'],
         'reno': ['RenoMono', 'mono'],
         'neue': ['NeueMachina', 'sans'],
-      }
+      },
     }
   }
 }

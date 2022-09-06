@@ -6,7 +6,7 @@
         footerInfoContainer: `py-10 px-6 w-1/2 h-full flex flex-col sm:flex-row justify-between items-start gap-4`,
         // wrapper: ``,
         logoContainer: `flex h-full justify-start items-start`,
-        logo: `h-6`,
+        logo: `border-2`,
         logoText: ``,
         menuCol: `flex flex-col`,
         menuHeading: ``,
@@ -19,7 +19,7 @@
         <div class={style.footerLogoContainer}>
             <div class="flex items-center w-full h-full flex-col sm:flex-row justify-between gap-4">
                 <div class={style.logoContainer}>
-                    <a href="/"><img class={style.logo} src="/images/Icono.jpeg" alt="" /></a>
+                    <a href="/"><img class={style.logo} src="/images/DAOMENT-SELLO-CMYK-2.svg" alt="" /></a>
                     <!-- <a href="/"><img class={style.logo} src="/images/IconoNegro.png" alt="" /></a> -->
                 </div>
                 <div>Democratized Real Estate Investing</div>

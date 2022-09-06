@@ -6,8 +6,9 @@
         containerLeft: "flex flex-col w-full md:w-1/2 p-6",
         containerRight: "hidden md:block flex w-1/2 rounded-2xl",
         leftarrow: "h-5 w-5",
-        titleItem: `flex`,
+        titleItem: `flex items-center`,
         titleText: `text-2xl`,
+        image: `h-full w-full object-cover shadow-lg`
     }
   </script>
 
@@ -26,7 +27,7 @@
         </div>
         <SignUp/>
     </div>
-    <div class={style.containerRight}>
-        <img src="https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630741_1280.jpg" alt="">
+    <div class={style.containerRight} style="background-image: url('https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630741_1280.jpg')">
+        <!-- <img class={style.image} src="https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630741_1280.jpg" alt=""> -->
     </div>
 </div>

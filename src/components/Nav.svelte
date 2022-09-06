@@ -2,7 +2,7 @@
     import NavMobileOptions from "./NavMobileOptions.svelte";
 
     const style = {
-        navWrapper: `flex flex-cols p-6 justify-between items-center`, //border-b-2 border-black
+        navWrapper: `flex flex-cols p-6 justify-between items-center sticky top-0 z-10 bg-white`, //border-b-2 border-black
         logoContainer: `flex justify-center items-center`,
         logo: `h-20`,
         logoText: `hidden md:block text-2xl font-bold text-[#071F25]`,

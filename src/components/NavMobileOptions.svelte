@@ -4,7 +4,7 @@
   }
 </script>
 
-<div class="flex flex-col absolute p-6 h-screen w-full z-10 bg-daoblue text-white">
+<div class="flex flex-col absolute p-6 h-screen w-full z-20 bg-daoblue text-white">
   <button class="w-full flex justify-end">
     
     <!-- <img class="h-10" src="icons/cross.svg" alt=""> -->
