@@ -1,12 +1,12 @@
 <script>
     const style = {
-        wrapper: `flex w-full h-full border-t border-[#0030C9] justify-center items-center text-[#0030C9]`,
-        container: ` flex w-full h-full justify-between items-center max-w-7xl text-sm`,
-        footerLogoContainer: `py-10 px-6 w-1/2 h-full border-r border-daoblue`,
-        footerInfoContainer: `py-10 px-6 w-1/2 h-full flex flex-col sm:flex-row justify-between items-start gap-4`,
+        wrapper: `flex w-full h-full justify-center items-center text-[#0030C9]`,
+        container: ` flex w-full h-full justify-between items-center`,
+        footerLogoContainer: `py-4 px-6 w-1/2 h-full`,
+        footerInfoContainer: `py-4 px-6 w-1/2 h-full flex flex-col sm:flex-row items-start justify-between gap-4`,
         // wrapper: ``,
         logoContainer: `flex h-full justify-start items-start`,
-        logo: `border-2`,
+        logo: `h-36`,
         logoText: ``,
         menuCol: `flex flex-col`,
         menuHeading: ``,
@@ -17,12 +17,11 @@
 <div class={style.wrapper}>
     <div class={style.container}>
         <div class={style.footerLogoContainer}>
-            <div class="flex items-center w-full h-full flex-col sm:flex-row justify-between gap-4">
+            <div class="flex items-center w-full h-full flex-col sm:flex-row gap-10">
                 <div class={style.logoContainer}>
                     <a href="/"><img class={style.logo} src="/images/DAOMENT-SELLO-CMYK-2.svg" alt="" /></a>
                     <!-- <a href="/"><img class={style.logo} src="/images/IconoNegro.png" alt="" /></a> -->
                 </div>
-                <div>Democratized Real Estate Investing</div>
             </div>
 
         </div>

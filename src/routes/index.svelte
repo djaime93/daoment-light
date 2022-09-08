@@ -31,7 +31,7 @@
             <div class="w-full h-full flex absolute top-0 left-0 justify-center items-start px-4 flex-col">
 
                 <div class="flex w-full"><DaomentReitSvg/></div>
-                <a class="py-3 px-6 ml-10 bg-daoblue text-white font-semibold rounded-lg mt-4" href="/signup">Sign Up</a>
+                <a class="py-3 px-6 ml-8 bg-daoblue text-white font-semibold rounded-lg mt-4" href="/signup">Sign Up</a>
             </div>
             <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg" alt="">
         </div>
@@ -39,17 +39,16 @@
 
     <div class="w-full h-full py-10 sm:px-6 max-w-7xl">
                 <div class="text-4xl pb-6 font-reno font-bold text-daoblue text-center">A New Way To Invest</div>
-        <div class="flex flex-col sm:flex-row w-full justify-between items-center">
-            <div class="flex flex-col pb-6">
-                <div>Get exclusive access to commercial and residential real estate deals.</div>
-                <div class="w-full flex flex-col items-center">
-
-                    <img class="h-60 w-60" src="/images/ilustracion.png" alt="">
+        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-6">
+            <div class="flex flex-col sm:w-1/2 pb-6">
+                <div class="flex flex-col items-center">
+                    <img class="aspect-square" src="/images/ilustracion.png" alt="">
                 </div>
             </div>
-            <div class="flex flex-col divide-y-2 divide-gray-200">
-                <div class="pb-3 text-xl">Earn monthly rental distributions</div>
-                <div class="py-3 text-xl">Accessible Ticket Prices</div>
+            <div class="flex flex-col divide-y-2 divide-gray-200 sm:w-1/2 px-4 sm:px-0">
+                <div class="pb-3 text-xl">Get exclusive access to commercial and residential real estate deals</div>
+                <div class="py-3 text-xl">Earn monthly rental distributions</div>
+                <div class="py-3 text-xl">Accessible ticket prices</div>
                 <div class="py-3 text-xl">Increased liquidity through a global market</div>
                 <div class="pt-3 text-xl">Transparent management and distributions through blockchain</div>
             </div>
@@ -90,17 +89,19 @@
                 <div class="text-xl pt-3">Leverage to Build Wealth</div>
             </div>
         </div>
+
         <div class="lg:w-2/3">
-        <div class="text-center text-xl font-reno font-bold">20-year annualized returns by asset class (1999-2018)</div>
+        <div class="text-center text-xl font-reno font-bold">20-year annualized returns by asset class</div>
         <div class="hidden sm:block">
             <BarChart/>
         </div>
+        
         <div class="sm:hidden">
         <BarChartMin/>
         </div>
         <!-- <HorizontalBarChart/> -->
         <!-- <LineChart/> -->
-        <div class="text-xs pt-2">Source: J.P. Morgan Asset Management</div>
+        <div class="text-end text-xs pt-2">Source: (1999-2018) J.P. Morgan Asset Management</div>
         </div>
     </div>
     </div>
